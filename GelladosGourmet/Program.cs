@@ -112,6 +112,11 @@ namespace GelladosGourmet
 
          */
 
+        /*
+         * Entendendo a estrtutura do projeto GelladosGourment - 20/01/2020
+         * Explicação e teoria
+         */
+
 
     }
 }
