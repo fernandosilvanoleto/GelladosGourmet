@@ -17,7 +17,9 @@ namespace GelladosGourmet.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Bem Vindos ao Gellados Gourmet!!!";
+            ViewData["Email"] = "rafaellamartins@gmail.com";
+            ViewData["Nome"] = "Rafaella Martins";
 
             return View();
         }
