@@ -37,7 +37,8 @@ namespace GelladosGourmet
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<GelladosGourmetContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("GelladosGourmetContext")));
+                    options.UseMySql(Configuration.GetConnectionString("GelladosGourmetContext"), builder =>
+                    builder.MigrationsAssembly("GelladosGourmet")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
