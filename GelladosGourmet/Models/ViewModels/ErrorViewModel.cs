@@ -1,6 +1,6 @@
 using System;
 
-namespace GelladosGourmet.Models
+namespace GelladosGourmet.Models.ViewModels
 {
     public class ErrorViewModel
     {
