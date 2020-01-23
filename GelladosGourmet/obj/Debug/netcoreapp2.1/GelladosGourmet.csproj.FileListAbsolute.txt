@@ -64,3 +64,8 @@ G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.dll
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.pdb
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.csproj.CopyComplete
+G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Create.g.cshtml.cs
+G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Delete.g.cshtml.cs
+G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Details.g.cshtml.cs
+G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.g.cshtml.cs
+G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
