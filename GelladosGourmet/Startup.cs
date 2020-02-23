@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using GelladosGourmet.Models;
 using GelladosGourmet.Data;
+using GelladosGourmet.Services;
 
 namespace GelladosGourmet
 {
@@ -42,6 +43,7 @@ namespace GelladosGourmet
                     builder.MigrationsAssembly("GelladosGourmet")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
 
         }
 
