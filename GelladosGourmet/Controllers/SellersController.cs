@@ -46,18 +46,30 @@ namespace GelladosGourmet.Controllers
             // colocando o nameof, eu não preciso ficar preocupado com a mudança de nomes que o Index pode sofrer -- boa dica de programação
         }
 
+        [HttpGet]
         public IActionResult Delete(int? id)
         {
             if (id == null)
             {
+                Console.WriteLine(id.Value);
                 return NotFound();
-            }
+            }            
+
             var obj = _sellerService.FindyById(id.Value);
+
             if (obj == null)
             {
                 return NotFound();
             }
             return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _sellerService.Remove(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
