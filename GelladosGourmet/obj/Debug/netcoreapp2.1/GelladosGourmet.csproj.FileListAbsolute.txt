@@ -39,7 +39,6 @@ G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\bin\Debug\netcoreapp2.
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\bin\Debug\netcoreapp2.1\GelladosGourmet.pdb
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\bin\Debug\netcoreapp2.1\GelladosGourmet.Views.dll
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\bin\Debug\netcoreapp2.1\GelladosGourmet.Views.pdb
-G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.csprojAssemblyReference.cache
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.csproj.CoreCompileInputs.cache
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.RazorAssemblyInfo.cache
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.RazorAssemblyInfo.cs
