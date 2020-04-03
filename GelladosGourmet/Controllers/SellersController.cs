@@ -71,5 +71,23 @@ namespace GelladosGourmet.Controllers
             _sellerService.Remove(id);
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Detalhe(int? id)
+        {
+            if (id == null)
+            {
+                Console.WriteLine(id.Value);
+                return NotFound();
+            }
+
+            var obj = _sellerService.FindyById(id.Value);
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
     }
 }
