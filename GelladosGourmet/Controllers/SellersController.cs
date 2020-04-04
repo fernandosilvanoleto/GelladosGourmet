@@ -7,6 +7,7 @@ using GelladosGourmet.Models.ViewModels;
 using GelladosGourmet.Services;
 using Microsoft.AspNetCore.Mvc;
 using GelladosGourmet.Services.Exceptions;
+using System.Diagnostics;
 
 namespace GelladosGourmet.Controllers
 { 
@@ -52,15 +53,14 @@ namespace GelladosGourmet.Controllers
         {
             if (id == null)
             {
-                Console.WriteLine(id.Value);
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id is null and id not provider!" });
             }            
 
             var obj = _sellerService.FindyById(id.Value);
 
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id Not Found" });
             }
             return View(obj);
         }
@@ -77,15 +77,14 @@ namespace GelladosGourmet.Controllers
         {
             if (id == null)
             {
-                Console.WriteLine(id.Value);
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id Not provided" });
             }
 
             var obj = _sellerService.FindyById(id.Value);
 
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id Not Found" });
             }
             return View(obj);
         }
@@ -94,12 +93,12 @@ namespace GelladosGourmet.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id Not Provided" });
             }
             var obj = _sellerService.FindyById(id.Value);
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id Not Found" });
             }
             List<Department> departments = _departmentService.FindAll();
             SellerFormViewModel viewModel = new SellerFormViewModel { Seller = obj, Departments = departments };
@@ -112,21 +111,31 @@ namespace GelladosGourmet.Controllers
         {
             if (id != seller.Id)
             {
-                return BadRequest();
+                return RedirectToAction(nameof(Error), new { message = "Id diferentes!!!" });
             }
             try
             {
                 _sellerService.Update(seller);
                 return RedirectToAction(nameof(Index));
             }
-            catch (NotFoundException)
+            catch (NotFoundException e)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = e.Message });
             }
-            catch (DbConcurrencyException)
+            catch (DbConcurrencyException e)
             {
-                return BadRequest();
+                return RedirectToAction(nameof(Error), new { message = e.Message });
             }
+        }
+
+        public IActionResult Error(string message)
+        {
+            var viewModel = new ErrorViewModel
+            {
+                Message = message,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            };
+            return View(viewModel);
         }
 
     }

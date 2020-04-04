@@ -84,7 +84,7 @@ using GelladosGourmet.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(379, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2f5ff4c426f43ff85a637385302c527", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29d284cb88154da59e7ae86692bfb1ea", async() => {
                 BeginContext(425, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -119,7 +119,7 @@ using GelladosGourmet.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(441, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d6c3b055f954f25a45d10e5f2148282", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8a5a300d04248d19342f89611dac010", async() => {
                 BeginContext(463, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

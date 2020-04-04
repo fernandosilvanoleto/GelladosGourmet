@@ -73,3 +73,4 @@ G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Delete.g.cshtml.cs
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Detalhe.g.cshtml.cs
 G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Editar.g.cshtml.cs
+G:\Programação_Udemy\C#\GelladosGourmet\GelladosGourmet\obj\Debug\netcoreapp2.1\GelladosGourmet.csprojAssemblyReference.cache
