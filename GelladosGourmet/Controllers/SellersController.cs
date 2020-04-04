@@ -42,6 +42,12 @@ namespace GelladosGourmet.Controllers
         [ValidateAntiForgeryToken] //anti-request
         public IActionResult Criar(Seller seller)
         {
+            if (!ModelState.IsValid)
+            {
+                var departments = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                return View(viewModel);
+            }
             // só passando o Id do Departamento que o Framework irá conhecer o departmento correto, não precisando fazer mais nada
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
@@ -109,6 +115,12 @@ namespace GelladosGourmet.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Seller seller)
         {
+            if (!ModelState.IsValid)
+            {
+                var departments = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                return View(viewModel);
+            }
             if (id != seller.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id diferentes!!!" });
