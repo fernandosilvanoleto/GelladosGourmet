@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GelladosGourmet.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace GelladosGourmet.Services
 {
@@ -16,9 +17,12 @@ namespace GelladosGourmet.Services
             _context = context;
         }
 
-        public List<Department> FindAll()
+        // transformando nosso método em assíncrono
+        public async Task<List<Department>> FindAllAsync()
         {
-            return _context.Department.OrderBy(x => x.Name).ToList();
+            // agora a nossa função está assincrona
+            // a gente coloca await para avisar ao compilador que é assincrono
+            return await _context.Department.OrderBy(x => x.Name).ToListAsync();
         }
     }
 }
