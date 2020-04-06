@@ -73,7 +73,7 @@ using GelladosGourmet.Models;
             WriteLiteral("</h2>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        ");
             EndContext();
             BeginContext(156, 1063, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6680fc2a04e649218f1607a6b79b1b65", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56375403eeec4c3e9e9e6be0d0b7957f", async() => {
                 BeginContext(212, 1000, true);
                 WriteLiteral(@"
             <fieldset>
@@ -119,7 +119,7 @@ using GelladosGourmet.Models;
             WriteLiteral("\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        ");
             EndContext();
             BeginContext(1296, 1043, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06fdc53c04ef4ba8981c201985115199", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f93ceba9900b4213964075181177495f", async() => {
                 BeginContext(1354, 978, true);
                 WriteLiteral(@"
             <fieldset>
